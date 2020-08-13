@@ -1,2 +1,6 @@
 # go-activity-monitor
-A small project to help me learn golang, create an FOSS alternative to RescueTime for linux, and learn some linux process management stuff.
+
+A small project to create a FOSS alternative to RescueTime and other time tracking apps for linux. There are other FOSS tools out there, but some are very old
+and barely maintained, so now is a good time as ever to get hands dirty with this.
+
+Intention is to have this as a CLI tool. Add it as part of your startup application and you can use the CLI to interact with it
