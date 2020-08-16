@@ -15,17 +15,22 @@ import (
 	"github.com/BurntSushi/xgbutil/ewmh"
 	"github.com/BurntSushi/xgbutil/icccm"
 	"github.com/BurntSushi/xgbutil/xwindow"
+  "github.com/davecgh/go-spew/spew"
 )
 
 func main() {
 	// Connect to the X server using the DISPLAY environment variable.
 	X, err := xgbutil.NewConn()
+
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	// Get a list of all client ids.
 	clientids, err := ewmh.ClientListGet(X)
+
+  spew.Dump(clientids)
+
 	if err != nil {
 		log.Fatal(err)
 	}
