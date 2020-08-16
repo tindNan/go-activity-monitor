@@ -1,5 +1,0 @@
-package ps
-
-import (
-  "fmt"
-)
